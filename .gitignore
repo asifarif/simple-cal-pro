@@ -18,7 +18,6 @@ coverage.xml
 # Environment variables
 .env
 .env.*
-.venv/
 
 
 # Jupyter Notebook checkpoints
@@ -60,3 +59,5 @@ var/
 # Mac/Windows hidden files
 .DS_Store
 Thumbs.db
+.venv/
+.venv/
