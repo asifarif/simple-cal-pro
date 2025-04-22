@@ -1,0 +1,32 @@
+# Ignore source control
+.git
+.gitignore
+
+# Bytecode and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Unit test & coverage files
+*.log
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Virtual environments
+venv/
+.env/
+.venv/
+
+# Local configuration
+*.env
+*.env.*
+
+# Ignore IDE/editor files
+.vscode/
+.idea/
+
+# Other
+Dockerfile
+docker-compose.yml

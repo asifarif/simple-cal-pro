@@ -1,0 +1,27 @@
+# name: Deploy to Hugging Face Spaces
+
+on:
+  push:
+    branches:
+      - main  # Trigger deployment on push to main
+
+jobs:
+  deploy:
+    name: Deploy to HF Space
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Git config
+      run: |
+        git config --global user.email "actions@github.com"
+        git config --global user.name "GitHub Actions"
+
+    - name: Push changes to Hugging Face Space
+      env:
+        HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      run: |
+        git remote add hf https://muasif:${HF_TOKEN}@huggingface.co/spaces/muasif/simple-cal-pro
+        git push hf main --force
