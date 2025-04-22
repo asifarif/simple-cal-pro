@@ -1,5 +1,5 @@
 # Removed the name property as it is optional
-# CI-Workflow pipeline
+# name: CI-Workflow pipeline
 
 on:
   push:
