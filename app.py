@@ -15,7 +15,7 @@ def divide(a, b):
         return "Cannot divide by zero"
     return a / b
 
-st.title("Asif Calculator Project - V1")
+st.title("Asif Calculator Project")
 
 operation = st.selectbox("Select operation:", ["Add", "Subtract", "Multiply", "Divide"])
 
