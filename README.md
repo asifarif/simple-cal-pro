@@ -29,8 +29,8 @@ Students will:
 - Push to GitHub  
 
 Set up two workflows:  
-- `build-and-test.yaml`  
-- `deploy.yaml`
+- `ci-workflow.yaml`  
+- `cd-workflow.yaml`
 
 🔐 Add Hugging Face Token  
 - Go to Hugging Face > Settings > Access Tokens  
